@@ -1,0 +1,57 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_937027cd45df418a927e8a8ffdef899a
+  created: 1764164863148
+  modified: 1764164863148
+  description: ""
+collection:
+  - url: "{{ _.host }}"
+    name: Autorisation
+    meta:
+      id: req_d9e7d8808ec54d23a588e275883dcfa0
+      created: 1764164863155
+      modified: 1764167312740
+      isPrivate: false
+      description: ""
+      sortKey: -1764164863156
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "sdlfkjsdfl",
+        	"jsonrpc": "2.0",
+        	"action": "login",
+        	"params": {
+        		"login": "123456",
+        		"pass": "test_pass",
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4488dd6a8f9cd4175423032d000b11c9ec03f2c5
+    created: 1764164863153
+    modified: 1764164863153
+environments:
+  name: Copy-Pamm API
+  meta:
+    id: env_4488dd6a8f9cd4175423032d000b11c9ec03f2c5
+    created: 1764164863152
+    modified: 1764166265959
+    isPrivate: false
+  data:
+    host: http://108.142.220.101:56002/api/v1/
