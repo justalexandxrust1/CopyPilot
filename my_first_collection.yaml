@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_d9e7d8808ec54d23a588e275883dcfa0
       created: 1764164863155
-      modified: 1764167312740
+      modified: 1764169098924
       isPrivate: false
       description: ""
       sortKey: -1764164863156
@@ -23,7 +23,7 @@ collection:
         {
         	"id": "sdlfkjsdfl",
         	"jsonrpc": "2.0",
-        	"action": "login",
+        	"action": "pub.get",
         	"params": {
         		"login": "123456",
         		"pass": "test_pass",
@@ -32,6 +32,10 @@ collection:
     headers:
       - name: Content-Type
         value: application/json
+      - name: WL
+        value: "1"
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
