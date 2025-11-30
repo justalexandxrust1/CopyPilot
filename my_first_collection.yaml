@@ -79,6 +79,81 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: "{{ _.host }}"
+    name: Get own user data
+    meta:
+      id: req_cc4ba2fbfbd94fb89844cdf115369e43
+      created: 1764517232729
+      modified: 1764517325887
+      isPrivate: false
+      description: ""
+      sortKey: -1764164863131
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "sdlfkjsdfl",
+        	"jsonrpc": "2.0",
+        	"action": "usr.get",
+        	"params": {
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: WL
+        value: "1"
+        description: ""
+        disabled: false
+      - name: AccessToken
+        value: 3:3:73b19cfb58294d086b2cb72d3315d374
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.host }}"
+    name: Get provider data
+    meta:
+      id: req_450b3d0a68d044d4ad44b4b711453c69
+      created: 1764517355949
+      modified: 1764517371198
+      isPrivate: false
+      description: ""
+      sortKey: -1764164863056
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "sdlfkjsdfl",
+        	"jsonrpc": "2.0",
+        	"action": "pub.get",
+        	"params": {
+        		"id": 1
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: WL
+        value: "1"
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
