@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_d9e7d8808ec54d23a588e275883dcfa0
       created: 1764164863155
-      modified: 1764517093515
+      modified: 1764517536107
       isPrivate: false
       description: ""
       sortKey: -1764164863156
@@ -49,7 +49,7 @@ collection:
     meta:
       id: req_bd3ad13ec0f5417b87d2e839a0250618
       created: 1764516761343
-      modified: 1764517058516
+      modified: 1764517470480
       isPrivate: false
       description: ""
       sortKey: -1764164863106
@@ -62,6 +62,8 @@ collection:
         	"jsonrpc": "2.0",
         	"action": "pub.req",
         	"params": {
+        		"lim":10,
+        		"skp":0
         	}
         }
     headers:
