@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_d9e7d8808ec54d23a588e275883dcfa0
       created: 1764164863155
-      modified: 1764169098924
+      modified: 1764517093515
       isPrivate: false
       description: ""
       sortKey: -1764164863156
@@ -23,10 +23,45 @@ collection:
         {
         	"id": "sdlfkjsdfl",
         	"jsonrpc": "2.0",
-        	"action": "pub.get",
+        	"action": "reg.usr",
         	"params": {
-        		"login": "123456",
-        		"pass": "test_pass",
+        		"login": "1000",
+        		"pass": "pamm123",
+        	}
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: WL
+        value: "1"
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.host }}"
+    name: Request providers
+    meta:
+      id: req_bd3ad13ec0f5417b87d2e839a0250618
+      created: 1764516761343
+      modified: 1764517058516
+      isPrivate: false
+      description: ""
+      sortKey: -1764164863106
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": "sdlfkjsdfl",
+        	"jsonrpc": "2.0",
+        	"action": "pub.req",
+        	"params": {
         	}
         }
     headers:
@@ -55,7 +90,7 @@ environments:
   meta:
     id: env_4488dd6a8f9cd4175423032d000b11c9ec03f2c5
     created: 1764164863152
-    modified: 1764166265959
+    modified: 1764516946870
     isPrivate: false
   data:
-    host: http://108.142.220.101:56002/api/v1/
+    host: http://173.234.108.17:54101/api/v1/
