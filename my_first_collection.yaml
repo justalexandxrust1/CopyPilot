@@ -86,7 +86,7 @@ collection:
     meta:
       id: req_cc4ba2fbfbd94fb89844cdf115369e43
       created: 1764517232729
-      modified: 1764517325887
+      modified: 1764518380558
       isPrivate: false
       description: ""
       sortKey: -1764164863131
@@ -109,7 +109,8 @@ collection:
         description: ""
         disabled: false
       - name: AccessToken
-        value: 3:3:73b19cfb58294d086b2cb72d3315d374
+        value: "{% response 'body', 'req_d9e7d8808ec54d23a588e275883dcfa0',
+          'b64::JC5yZXN1bHQuYXV0aC50a24=::46b', 'never', 60 %}"
         description: ""
         disabled: false
     settings:
